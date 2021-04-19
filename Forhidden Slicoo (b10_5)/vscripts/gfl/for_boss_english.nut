@@ -6,7 +6,7 @@ SPEED_FORWARD 	<- 	1.00;
 SPEED_TURNING 	<- 	1.00;
 MAX_SPEED		<- 	40;
 MAX_STOP_TIME	<- 	2.00;
-ZHONGXIN <- Vector(10148,-6832,3704);// PUSH 2040 3072 116            之前的 Vector(2048,3072,40) 之後的         10148 -6832 3780  10148 -6832 3704
+ZHONGXIN <- Vector(10148,-6832,3704);// PUSH 2040 3072 116            之前的 Vector(2048,3072,40) 之后的         10148 -6832 3780  10148 -6832 3704
 
 
 p <- null;
@@ -195,7 +195,7 @@ function diaoxue()
 	if(boss_hp_sub_Enable)
 	{	if(boss_hp>0)
 			boss_hp = boss_hp - 1;
-		EntFire("lfkb_boss_hpshow", "SetText", "RaphaKumpa HP: "+(boss_hp).tostring(), 0.01, null);
+		EntFire("lfkb_boss_hpshow", "SetText", "RaphaKump HP: "+(boss_hp).tostring(), 0.01, null);
 		EntFire("lfkb_boss_hpshow","Display","",0.02,null);
 	}
 	return;
@@ -520,8 +520,8 @@ function jineng()
 		timer_for_jineng = -32;
 		target_human = false;
 		p = lfkb_boss_zhongxin;
-		ScriptPrintMessageCenterAll("罪惡的傢伙們~\n和你的罪一起燃為灰燼吧！");
-		EntFire("lfkb_boss_jineng_show", "SetText", "罪惡的傢伙們~\n和你的罪一起燃為灰燼吧！", 3.01, null);
+		ScriptPrintMessageCenterAll("You criminals~\nshall burn to ashes with your sins!");
+		EntFire("lfkb_boss_jineng_show", "SetText", "You criminals~\nshall burn to ashes with your sins!", 3.01, null);
 		//EntFire("lfkb_zuie_sound","PlaySound","",3,null);
 		EntFire("lfkb_boss_jineng_show","Display","",3.1,null);
 		EntFireByHandle(self,"RunScriptCode","paodu();",3,null,null);
@@ -539,8 +539,8 @@ function jineng()
 		timer_for_jineng = -16;
 		target_human = false;
 		p = lfkb_boss_zhongxin;
-		ScriptPrintMessageCenterAll("Come my conquerors!\nDestroy those filthy things!");
-		EntFire("lfkb_boss_jineng_show", "SetText", "Come my conquerors!\nDestroy those filthy things!"x, 3.01, null);
+		ScriptPrintMessageCenterAll("Come my conquerors!\nDestroy those filthy bugs!");
+		EntFire("lfkb_boss_jineng_show", "SetText", "Come my conquerors!\nDestroy those filthy bugs!", 3.01, null);
 		//EntFire("lfkb_zfz_sound","PlaySound","",3,null);
 		EntFire("lfkb_boss_jineng_show","Display","",3.1,null);
 		EntFireByHandle(self,"RunScriptCode","Make_lfkb_longche_3()",3,null,null);
@@ -574,8 +574,8 @@ function jineng()
 		timer_for_jineng = -14;
 		target_human = false;
 		p = lfkb_boss_zhongxin;
-		ScriptPrintMessageCenterAll( "This is divine punishment for you guys!\nI shall make you perish till nothing is left");
-		EntFire("lfkb_boss_jineng_show", "SetText", "This is divine punishment for you guys!\nI shall make you perish till nothing is left", 3.01, null);
+		ScriptPrintMessageCenterAll( "This is divine punishment for you crminals!\nI shall burn you till nothing is left!");
+		EntFire("lfkb_boss_jineng_show", "SetText", "This is diving punishment for you criminals!\nI shall burn you till nothing is left!", 3.01, null);
 		//EntFire("lfkb_tianfa2_sound","PlaySound","",3,null);
 		EntFire("lfkb_boss_jineng_show","Display","",3.1,null);
 		EntFireByHandle(self,"RunScriptCode","Make_lfkb_tianfa_qiang();",3,null,null);
